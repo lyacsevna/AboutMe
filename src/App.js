@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
+import AboutMe from './components/aboutme';
+import Projects from './components/projects';
+import Contacts from './components/contacts';
 import './App.css';
 
-function MainInfo() {
+const App = () => {
   return (
-    <div className='MainInfo'>
-      <p>привет</p>
-    </div>
-
-
+      <div>
+          <AboutMe />
+          <Projects />
+          <Contacts />
+      </div>
   );
-}
-
-function App() {
-  return (
-    <div className="App">
-        <p>привет</p>
-
-    </div>
-  );
-}
+};
 
 export default App;
