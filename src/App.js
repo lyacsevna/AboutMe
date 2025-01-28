@@ -3,20 +3,29 @@ import AboutMe from './components/aboutme';
 import Projects from './components/projects';
 import Contacts from './components/contacts';
 import EducationSection from './components/education'
+import HeaderFunction from './components/header'
 import './App.css';
 
 
 
 const App = () => {
   return (
-    <body>
-      <div className='container'>
-          <AboutMe/>
-          <EducationSection/>
-          <Projects />
-          <Contacts />
-      </div>
-    </body>
+    <><header>
+      <HeaderFunction />
+    </header><body>
+        <div className='container'>
+          <AboutMe />
+          <div className='item'>
+            <EducationSection />
+          </div>
+          <div className='item'>
+            <Projects />
+          </div>
+          <div className='item'>
+            <Contacts />
+          </div>
+        </div>
+      </body></>
   );
 };
 

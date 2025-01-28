@@ -4,8 +4,12 @@ const AboutMe = () => {
     return (
         <section id="aboutme">
             <h1>Hello, world!</h1>
-            <p>I am just learning. I am a 3rd year student at Voronezh State Technical University,
-                Faculty of Information Technology and Computer Security.</p>
+
+            <p> Привет! Это мой сайт, созданный для изучения React.js.
+                Также этот сайт в процессе превратится в небольшое портфолио.
+                Пока что на этом все.
+            </p>
+            <p>I am just learning</p>
         </section>
     );
 };
