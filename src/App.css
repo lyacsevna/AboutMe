@@ -19,6 +19,17 @@ body {
   
 }
 
+.projects_container {
+  display: flex;
+  background-color: antiquewhite;
+  justify-content: space-around;
+  margin: 15px;
+}
+
+.project_item {
+  background-color: #434752 ;
+}
+
 h1 {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -33,8 +44,6 @@ a {
 h2 {
   /*color: #26736a;*/
   color: white;
-  
-
 
 }
 

@@ -35,3 +35,30 @@ export const courses = [
 ]
       
   
+export const myprojects = [
+    {
+        project_title:
+            'Планировщик задач (ОТРЕДАКТИРОВАТЬ)',
+        description:
+            'Написанное приложение в рамках курсового проекта для приобретения навыков работы с Djiango',
+        stack:
+            'Djiango Python, html + css'
+        
+    },
+    {
+        project_title:
+            'Учет ежедневных задач (ОТРЕДАКТИРОВАТЬ)',
+        description:
+            'CRUD-приложение для учета задач с возможностью импорта и экспорта данных',
+        stack:
+            'С# + Windows Presentation Foundation, Microsoft SQL Server, XAML'
+    },
+    {
+        project_title:
+            'Этот сайт (ОТРЕДАКТИРОВАТЬ)',
+        description:
+            'Веб-страничка для изучения React.js',
+        stack:
+            'React.js'
+    }
+]
