@@ -1,9 +1,6 @@
 import React from 'react';
 import { myprojects } from "../data";
 
-
-
-
 function ProjectsList({ project_title, description, stack }) {
     function handleClick() {
       localStorage.setItem('auth-time', new Date())
