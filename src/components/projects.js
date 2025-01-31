@@ -23,17 +23,18 @@ function ProjectsList({ project_title, description, stack }) {
 
 const Projects = () => {
     return (
-        <section id="projects_container">
+      <section id="projects_container">
             <h2>Мои проекты</h2>
             <p>Ниже вы можете ознакомиться с моими проектами и их кратким описанием.</p>
-            <div className='project_item'>
-                <ul>
-                    {myprojects.map((proj) => (
-                    <ProjectsList key = { proj.project_title } {...proj}/>
-                ))}
-                </ul>
-            </div>
-        </section>
+            
+        <ul>
+            {myprojects.map((proj) => (
+              <div className='project_item'>
+                <ProjectsList key = { proj.project_title } {...proj}/>
+              </div>
+            ))}
+        </ul>
+      </section>
     );
 };
 

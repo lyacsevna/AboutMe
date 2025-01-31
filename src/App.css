@@ -22,12 +22,15 @@ body {
 .projects_container {
   display: flex;
   background-color: antiquewhite;
-  justify-content: space-around;
-  margin: 15px;
+  margin-bottom: 20px;
+  
 }
 
 .project_item {
+  margin-bottom: 15px;
   background-color: #434752 ;
+  padding: 15px;
+
 }
 
 h1 {
