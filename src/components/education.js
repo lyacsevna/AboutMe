@@ -1,20 +1,20 @@
 import React from "react";
 import { courses, education } from "../data";
 
-function UniversityEdu({ university, faculty, specialy, years }) {
+function UniversityEdu({ university, faculty, specialty, years }) {
   function handleClick() {
     localStorage.setItem('auth-time', new Date())
   }
 
   return (
-    <li onClick={handleClick}>
+    <div onClick={handleClick}>
       <p>
         <strong>{university}</strong>
         <p>{faculty}</p>
-        <p>{specialy}</p>
+        <p>{specialty}</p>
         <p>{years}</p>
       </p>
-    </li>
+    </div>
   )
 }
 
@@ -24,13 +24,13 @@ function CoursesEdu({ title, organization, years }) {
     }
   
     return (
-      <li onClick={handleClick}>
+      <div onClick={handleClick}>
         <p>
             <strong>{title}</strong>
             <p>{organization}</p>
             <p>{years}</p>
         </p>
-      </li>
+      </div>
     )
   }
 
@@ -45,11 +45,11 @@ const EducationSection = () => {
             </ul>
 
             <h2>Курсы</h2>
-            <ui>
+            <ul>
                 {courses.map((course) => (
                     <CoursesEdu key={ course.title} {...course}/>
                 ))}
-            </ui>
+            </ul>
         </section>
     )
 }
