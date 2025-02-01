@@ -19,6 +19,15 @@ body {
   
 }
 
+section {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
 .projects_container {
   display: flex;
 }

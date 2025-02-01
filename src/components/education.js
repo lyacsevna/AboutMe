@@ -1,57 +1,58 @@
 import React from "react";
+import '../styles/edu.css';
 import { courses, education } from "../data";
 
 function UniversityEdu({ university, faculty, specialty, years }) {
   function handleClick() {
-    localStorage.setItem('auth-time', new Date())
+    localStorage.setItem('auth-time', new Date());
   }
 
   return (
-    <div onClick={handleClick}>
+    <div className="edu-item" onClick={handleClick}>
       <p>
         <strong>{university}</strong>
-        <p>{faculty}</p>
-        <p>{specialty}</p>
-        <p>{years}</p>
+        <span>{faculty}</span>
+        <span>{specialty}</span>
+        <span>{years}</span>
       </p>
     </div>
-  )
+  );
 }
 
 function CoursesEdu({ title, organization, years }) {
-    function handleClick() {
-      localStorage.setItem('auth-time', new Date())
-    }
-  
-    return (
-      <div onClick={handleClick}>
-        <p>
-            <strong>{title}</strong>
-            <p>{organization}</p>
-            <p>{years}</p>
-        </p>
-      </div>
-    )
+  function handleClick() {
+    localStorage.setItem('auth-time', new Date());
   }
 
-const EducationSection = () => {
-    return (
-        <section>
-            <h2>Образование</h2>
-            <ul>
-                { education.map (( edu ) => (
-                    <UniversityEdu key = { edu.university } {...edu}/>
-                ))}
-            </ul>
+  return (
+    <div className="course-item" onClick={handleClick}>
+      <p>
+        <strong>{title}</strong>
+        <span>{organization}</span>
+        <span>{years}</span>
+      </p>
+    </div>
+  );
+}
 
-            <h2>Курсы</h2>
-            <ul>
-                {courses.map((course) => (
-                    <CoursesEdu key={ course.title} {...course}/>
-                ))}
-            </ul>
-        </section>
-    )
+const EducationSection = () => {
+  return (
+    <section>
+      <h2>Образование</h2>
+      <ul>
+        {education.map((edu) => (
+          <UniversityEdu key={edu.university} {...edu} />
+        ))}
+      </ul>
+
+      <h2>Курсы</h2>
+      <ul>
+        {courses.map((course) => (
+          <CoursesEdu key={course.title} {...course} />
+        ))}
+      </ul>
+    </section>
+  );
 }
 
 export default EducationSection;
