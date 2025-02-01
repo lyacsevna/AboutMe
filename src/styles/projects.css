@@ -1,0 +1,9 @@
+.projects_container {
+    display: flex;
+  }
+  
+  .project_item {
+    margin-bottom: 15px;
+    background-color: #434752 ;
+    padding: 15px;
+  }

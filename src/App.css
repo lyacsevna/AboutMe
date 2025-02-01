@@ -28,16 +28,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-.projects_container {
-  display: flex;
-}
-
-.project_item {
-  margin-bottom: 15px;
-  background-color: #434752 ;
-  padding: 15px;
-}
-
 h1 {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

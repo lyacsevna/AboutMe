@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/projects.css';
 import { myprojects } from "../data";
 
 function ProjectsList({ projectTitle, description, stack }) {
