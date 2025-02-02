@@ -25,7 +25,7 @@ const AboutMe = () => {
                 В процессе этот сайт превратится в небольшое портфолио. 
                 Пока что на этом все.
             </p>
-            <p>I am just learning</p>
+            <p>I am just learning...</p>
         </section>
     );
 };
