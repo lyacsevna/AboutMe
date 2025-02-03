@@ -12,7 +12,7 @@ const Contacts = () => {
                     <img src={githubIcon} alt="GitHub" className="icon" />
             </a>
             <a
-                href="https://vk.com/lyacsevna" target="_blank" rel="noopener noreferrer">
+                href="https://vk.com/" target="_blank" rel="noopener noreferrer">
                     <img src={vkIcon} alt="VK" className="icon" />
                 </a>
             </div>
