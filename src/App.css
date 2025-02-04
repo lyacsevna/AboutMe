@@ -36,7 +36,7 @@ section {
 }
 
 h2 {
-  margin-bottom: 10px;
+  
 }
 
 h1 {
@@ -46,16 +46,9 @@ h1 {
   font-size: 80px;
 }
 
-.h1:hover {
-  text-shadow: white;
-}
-
-a {
-  color: #30a7e2;
-}
-
 h2 {
   color: white;
+  margin-bottom: 10px;
 }
 
 p {
