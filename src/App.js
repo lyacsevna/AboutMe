@@ -8,24 +8,26 @@ import FooterFunction from './components/footer';
 const App = () => {
   return (
     <>
-      <body>
-        <div className='container'>
+      <header>
+      </header>
+      <main className='container'>
+        <section>
           <AboutMe />
-          <div className='item'>
-            <EducationSection />
-          </div>
-          <div className='item'>
-            <Projects />
-          </div>
-          <div className='item'>
-            <Contacts />
-          </div>
-        </div>
-        <footer>
-          <FooterFunction />
-        </footer>
-      </body></>
-      
+        </section>
+        <section className='item'>
+          <EducationSection />
+        </section>
+        <section className='item'>
+          <Projects />
+        </section>
+        <section className='item'>
+          <Contacts />
+        </section>
+      </main>
+      <footer>
+        <FooterFunction />
+      </footer>
+    </>
   );
 };
 
