@@ -4,11 +4,13 @@ import Contacts from './components/contacts';
 import EducationSection from './components/education'
 import './App.css';
 import FooterFunction from './components/footer';
+import HeaderFunction from './components/navigation';
 
 const App = () => {
   return (
     <>
       <header>
+        <HeaderFunction/>
       </header>
       <main className='container'>
         <section>
