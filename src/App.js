@@ -9,12 +9,18 @@ const App = () => {
   return (
     <>
       <body>
-        <main>
+        <div className='container'>
           <AboutMe />
-          <EducationSection />
-          <Projects />
-          <Contacts/>
-        </main>
+          <div className='item'>
+            <EducationSection />
+          </div>
+          <div className='item'>
+            <Projects />
+          </div>
+          <div className='item'>
+            <Contacts />
+          </div>
+        </div>
         <footer>
           <FooterFunction />
         </footer>
