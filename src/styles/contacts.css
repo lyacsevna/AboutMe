@@ -1,3 +1,20 @@
+#contacts {
+    margin: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+h2 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+
 .icon {
     background-color: white; 
     border-radius: 50%; 
@@ -14,14 +31,17 @@
     display: flex;
     justify-content: left;
 }
+
+
 .icon:hover {
-    animation: rotate-right 2s cubic-bezier(0.4, 0, 0.2, 1); 
+    animation: rotate-right 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
     background-color: #f0f0f0; 
 }
 
 .icon:not(:hover) {
-    animation: rotate-left 2s cubic-bezier(0.4, 0, 0.2, 1); 
+    animation: rotate-left 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
 }
+
 
 @keyframes rotate-right {
     0% {
@@ -44,6 +64,7 @@
     }
 }
 
+
 .contact-item {
     color: white;
     padding: 10px;
@@ -57,35 +78,6 @@
 .contact-item:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-#contacts {
-    margin: 20px;
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-h2 {
-    margin-bottom: 10px;
-    color: white;
-}
-
-h3 {
-    color: white;
-}
-
-.contact-item {
-    margin: 10px 0;
-}
-
-.contact-item a {
-    text-decoration: none;
-    color: #007bff;
-    transition: color 0.3s;
-}
-
-.contact-item a:hover {
-    color: #0056b3;
 }
 
 .contact-form {
@@ -103,6 +95,7 @@ h3 {
 .contact-form textarea {
     margin-bottom: 15px;
     padding: 10px;
+    background-color: white ;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -119,4 +112,21 @@ h3 {
 
 .contact-form button:hover {
     background-color: #0056b3;
+}
+
+
+.contact-item a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: #0056b3;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
