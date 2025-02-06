@@ -22,18 +22,11 @@ body {
 
 .item {
   background-color: #2c303a;
-  padding: 20px;
+  padding: 30px;
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
-footer {
-  background-color: #30a7e2;
-  color: white;
-  padding: 10px 0;
-}
-
 
 h1 {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
