@@ -1,12 +1,15 @@
 import React from "react";
+import '../styles/navigation.css'
 
 const HeaderFunction = () => {
     return (
         <nav className="menu">
-            <p>Обо мне</p>
-            <p>Образование</p>
-            <p>Проекты</p>
-            <p>Контакты</p>
+            <ul className="header-items">
+                <li>Обо мне</li>
+                <li>Образование</li>
+                <li>Проекты</li>
+                <li>Контакты</li>
+            </ul>
         </nav>
     )
 }
