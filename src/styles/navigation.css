@@ -1,12 +1,36 @@
-.header-items{  
-    display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;  
-    align-items: center;
-  } 
-  
-  li {
-    height: 35px;
-    width: 110px;
-    color: white;
-  }
+.header-items {  
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;  
+  align-items: center;
+  padding: 0;
+}
+
+.header-items li {
+  position: relative;
+}
+
+.header-items li a {
+  height: 35px;
+  width: 110px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.header-items li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #30a7e2;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.header-items li:hover::after {
+  width: 100%;
+  left: 0;
+}

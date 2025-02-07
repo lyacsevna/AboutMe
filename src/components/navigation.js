@@ -5,10 +5,10 @@ const HeaderFunction = () => {
     return (
         <nav className="menu">
             <ul className="header-items">
-                <li>Обо мне</li>
-                <li>Образование</li>
-                <li>Проекты</li>
-                <li>Контакты</li>
+                <li><a href="#aboutme">Обо мне</a></li>
+                <li><a href="#education">Образование</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
     )

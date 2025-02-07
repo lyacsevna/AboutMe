@@ -21,7 +21,7 @@ function ProjectsList({ projectTitle, description, stack }) {
 
 const Projects = () => {
     return (
-      <section id="projects_container">
+      <section id="projects">
             <h2>Мои проекты</h2>
             <p>Ниже вы можете ознакомиться с моими проектами и их кратким описанием.</p>            
         <div>

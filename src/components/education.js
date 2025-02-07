@@ -37,7 +37,7 @@ function CoursesEdu({ title, organization, years }) {
 
 const EducationSection = () => {
   return (
-    <section>
+    <section id="education">
       <h2>Образование</h2>
       <ul>
         {education.map((edu) => (
