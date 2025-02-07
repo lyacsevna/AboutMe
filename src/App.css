@@ -45,6 +45,11 @@ p {
   color: white;
 }
 
+header {
+  background-color: #2c303a;
+  margin: 0 auto;
+  padding: 0;
+}
 
 section {
   margin: 20px 0;
