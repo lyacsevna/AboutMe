@@ -1,4 +1,5 @@
-import React , { useEffect, useState }  from 'react';
+import React, { useEffect, useState } from 'react';
+import '../styles/aboutme.css';
 
 const AboutMe = () => {
     const [text, setText] = useState('');
@@ -18,7 +19,7 @@ const AboutMe = () => {
     }, [fullText]);
 
     return (
-        <section id="aboutme">
+        <section id="aboutme" className="aboutme-section">
             <h1>{text}</h1>
             <p>
                 Привет! Это мой сайт, созданный для изучения React.js. 
