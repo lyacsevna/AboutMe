@@ -24,7 +24,7 @@ const Projects = () => {
       <section id="projects">
             <h2>Мои проекты</h2>
             <p>Ниже вы можете ознакомиться с моими проектами и их кратким описанием.</p>            
-        <div>
+        <div className='project_container'> 
             {myprojects.map((proj) => (
                 <ProjectsList key = { proj.projectTitle } {...proj}/>
             ))}

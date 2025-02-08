@@ -1,5 +1,15 @@
 .projects {
   display: flex;
+
+  }
+
+  .project_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
   }
   
 .project_item {
@@ -9,6 +19,8 @@
     border-radius: 5px;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    height: 25%;
+    width: 25%;
   }
     
 .project_item:hover {
@@ -17,7 +29,6 @@
   }
     
   span {
-    display: block;
     color: white;
     margin-top: 5px;
   }
