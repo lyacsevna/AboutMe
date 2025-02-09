@@ -33,6 +33,12 @@ export const myprojects = [
         stack: 'C#, Windows Presentation Foundation, Microsoft SQL Server, XAML'
     },
     {
+        projectTitle: 'Приложение для работы с STEP-JSON',
+        description: '(проект находится в разработке',
+        stack: 'C#, Windows Presentation Foundation, Microsoft SQL Server, XAML'
+
+    },
+    {
         projectTitle: 'Этот сайт',
         description: 'Веб-страница, созданная для изучения React.js.',
         stack: 'React.js'

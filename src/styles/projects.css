@@ -8,8 +8,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
-
   }
   
 .project_item {
@@ -19,7 +17,7 @@
     border-radius: 5px;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
-    height: 25%;
+    height: auto;
     width: 25%;
   }
     

@@ -20,7 +20,7 @@ const Contacts = () => {
             <h3>Форма обратной связи</h3>
             <form className="contact-form" aria-labelledby="contacts">
                 <fieldset>
-                    <legend>Свяжитесь с нами</legend>
+                    <legend>Свяжитесь со мной</legend>
                     <label htmlFor="name">Имя:</label>
                     <input type="text" id="name" name="name" required />
 
