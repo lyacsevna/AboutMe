@@ -17,3 +17,25 @@ span {
   color: white;
   margin-top: 5px;
 }
+
+.certificate-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.certificate_jpg img {
+  color: white;
+  max-width: 90%; 
+  max-height: 90%;
+  border-radius: 5px;
+}
