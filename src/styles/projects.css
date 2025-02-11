@@ -10,7 +10,6 @@
   flex-wrap: nowrap;
 }
 
-
 .project_item {
   padding: 10px;
   margin: 10px;
@@ -22,12 +21,10 @@
   width: 100%;
 }
 
-
 .project_item:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-
 
 span {
   color: white;
@@ -38,7 +35,7 @@ span {
   .project_container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:
+    justify-content: space-evenly;
   }
 
   .project_item {
