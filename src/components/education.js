@@ -52,6 +52,7 @@ function CoursesEdu({ title, organization, years, certificateUrl }) {
             <img src={certificateUrl} alt={`Сертификат для курса "${title}"`} />
           </div>
         </div>
+
       )}
     </div>
   );
