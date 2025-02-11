@@ -18,6 +18,11 @@ export const courses = [
         title: 'Введение в программирование (C++)',
         organization: 'Академия Яндекса',
         year: '2023'
+    },
+    {
+        title: 'Основы веб-верстки с HTML и CSS',
+        organization: 'Web Tactics',
+        year: '2025'
     }
 ];
 
