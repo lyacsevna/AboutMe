@@ -19,17 +19,14 @@ const Home = () => {
     }, [fullText]);
 
     return (
-        <section id="aboutme" className="aboutme-section">
-        <header>
-            <h1>{text}</h1>
-        </header>
-        <article>
-            <p>
-               
-            </p>
-
-        </article>
-    </section>
+        <section id="home" className="home-section">
+            <header className="home-header">
+                <h1 className="fade-in">{text}</h1>
+                <p className="fade-in">Я начинающий веб-разработчик, увлеченный созданием интерактивных веб-приложений.</p>
+                <p className="fade-in">Давайте вместе исследовать мир технологий!</p>
+                <a href="#aboutme" className="cta-button fade-in">Узнать больше</a>
+            </header>
+        </section>
     );
 };
 

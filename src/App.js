@@ -20,7 +20,7 @@ const Item = ({ children }) => {
               }
           });
       }, {
-          threshold: 0.7
+          threshold: 0.75
       });
 
       if (itemRef.current) {
@@ -48,12 +48,8 @@ const App = () => {
             <header>
                 <HeaderFunction />
             </header>
+            <Home />
             <main className='container'>
-                <section>
-                    <Item>
-                        <Home />
-                    </Item>
-                </section>
                 <section>
                     <Item>
                         <AboutMe />
