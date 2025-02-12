@@ -32,22 +32,26 @@ export const myprojects = [
     {
         projectTitle: 'Планировщик задач',
         description: 'Приложение, разработанное в рамках курсового проекта для приобретения навыков работы с Django.',
-        stack: 'Django, Python, HTML, CSS'
+        stack: 'Django, Python, HTML, CSS',
+        githubUrl: 'https://github.com/lyacsevna/PythonPlanner'
     },
     {
         projectTitle: 'Учет ежедневных задач',
         description: 'CRUD-приложение для учета задач с возможностью импорта и экспорта данных.',
-        stack: 'C#, Windows Presentation Foundation, Microsoft SQL Server, XAML'
+        stack: 'C#, Windows Presentation Foundation, Microsoft SQL Server, XAML',
+        githubUrl: 'https://github.com/lyacsevna/MyPlans-by-WFP'
     },
     {
         projectTitle: 'Приложение для работы с STEP-JSON',
         description: '(проект находится в разработке',
-        stack: 'C#, Windows Presentation Foundation, Microsoft SQL Server, XAML'
+        stack: 'C#, Windows Presentation Foundation, Microsoft SQL Server, XAML',
+        githubUrl: 'отсутствует ;)'
 
     },
     {
         projectTitle: 'Этот сайт',
         description: 'Веб-страница, созданная для изучения React.js.',
-        stack: 'React.js'
+        stack: 'React.js',
+        githubUrl: 'https://github.com/lyacsevna/About-Me'
     }
 ];
