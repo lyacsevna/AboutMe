@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Home from './components/home';
 import AboutMe from './components/aboutme';
 import Projects from './components/projects';
 import Contacts from './components/contacts';
@@ -48,6 +49,11 @@ const App = () => {
                 <HeaderFunction />
             </header>
             <main className='container'>
+                <section>
+                    <Item>
+                        <Home />
+                    </Item>
+                </section>
                 <section>
                     <Item>
                         <AboutMe />
