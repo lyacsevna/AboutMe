@@ -52,9 +52,7 @@ const App = () => {
             <main className='container'>
 
                 <section>
-                    <Item>
-                        <AboutMe />
-                    </Item>
+                    <AboutMe />
                 </section>
                 <section>
                     <Item>

@@ -27,8 +27,8 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #30a7e2;
-  transition: width 0.3s ease, left 0.3s ease;
+  background-color: #fb139b;
+  transition: width 0.1s ease, left 0.3s ease;
 }
 
 .header-items li:hover::after {
