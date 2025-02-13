@@ -64,18 +64,22 @@ const EducationSection = () => {
       <h2>Образование</h2>
       <ul>
         {education.map((edu) => (
-          <UniversityEdu key={edu.university} {...edu} />
+          <li key={edu.university}>
+            <UniversityEdu {...edu} />
+          </li>
         ))}
       </ul>
 
       <h2>Курсы</h2>
       <ul>
         {courses.map((course) => (
-          <CoursesEdu key={course.title} {...course} />
+          <li key={course.title}>
+            <CoursesEdu {...course} />
+          </li>
         ))}
       </ul>
     </section>
   );
-}
+};
 
 export default EducationSection;
