@@ -20,7 +20,7 @@ const Item = ({ children }) => {
               }
           });
       }, {
-          threshold: 0.75
+          threshold: 0.6
       });
 
       if (itemRef.current) {
