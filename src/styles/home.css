@@ -8,6 +8,7 @@
     color: white; 
     text-align: center;
     padding: 20px; 
+
 }
 
 .home-header {
@@ -30,7 +31,7 @@
 }
 
 .cta-button {
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 12px 24px;
     background-color: #fff;
     color: #6a11cb;
@@ -45,6 +46,7 @@
 .cta-button:hover {
     background-color: #f0f0f0;
     transform: translateY(-2px);
+    
 }
 
 @keyframes fadeIn {

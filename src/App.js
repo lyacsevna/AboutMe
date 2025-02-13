@@ -50,6 +50,7 @@ const App = () => {
             </header>
             <Home />
             <main className='container'>
+
                 <section>
                     <Item>
                         <AboutMe />

@@ -48,9 +48,8 @@ body {
 
 h1 {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-  color: greenyellow;
   font-size: 80px;
-  margin: 0;
+  margin-bottom: 30PX;
 }
 
 h2 {
@@ -63,7 +62,6 @@ p {
 }
 
 header {
-  background-color: #2c303a;
   margin: 0 auto;
   padding: 0;
 }
