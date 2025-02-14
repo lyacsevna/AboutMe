@@ -18,16 +18,15 @@ export const courses = [
         title: 'Введение в программирование (C++)',
         organization: 'Академия Яндекса',
         year: '2023',
-        certificateUrl:'src/datafiles/stepicCplusplus.jpg'
+        certificateUrl: 'https://stepik.org/certificate/1753031ed435ef3ea09cee4a122d5e70c5465813.png?resolution=medium'
     },
     {
         title: 'Основы веб-верстки с HTML и CSS',
         organization: 'Web Tactics',
         year: '2025',
-        certificateUrl:'src/datafiles/stepicHTML.jpg'
+        certificateUrl: 'https://stepik.org/certificate/c10e100f3658f7ae24b1488f8a7ffc8e9040f56e.png?resolution=medium'
     }
 ];
-
 export const myprojects = [
     {
         projectTitle: 'Планировщик задач',

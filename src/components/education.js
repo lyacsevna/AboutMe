@@ -5,6 +5,7 @@ import { courses, education } from "../data";
 function UniversityEdu({ university, faculty, specialty, years }) {
   function handleClick() {
     localStorage.setItem('auth-time', new Date());
+    
   }
 
   return (
