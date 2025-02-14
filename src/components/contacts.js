@@ -17,9 +17,10 @@ const Contacts = () => {
                     <img src={vkIcon} alt="VK" className="icon" />
                 </a>
             </div>
-            <h3>Форма обратной связи</h3>
+            <p>Если вам понравилась моя работа и вы хотите предложить мне интересный проект или вакансию, пожалуйста, заполните форму ниже. </p>
             <form className="contact-form" aria-labelledby="contacts">
                 <fieldset>
+                    
                     <legend>Свяжитесь со мной</legend>
                     <label htmlFor="name">Имя:</label>
                     <input type="text" id="name" name="name" required />

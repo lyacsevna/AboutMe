@@ -2,6 +2,7 @@
     margin: 20px;
     color: white;
     font-family: Arial, sans-serif;
+
 }
 
 
@@ -19,7 +20,7 @@
 
 .contactLink {
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 
