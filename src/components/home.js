@@ -13,7 +13,7 @@ const Home = () => {
             if (index === fullText.length) {
                 clearInterval(interval);
             }
-        }, 100);
+        }, 180);
 
         return () => clearInterval(interval);
     }, [fullText]);

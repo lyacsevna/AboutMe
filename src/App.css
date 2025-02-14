@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
 html {
   scroll-behavior: smooth;
+  
 }
 
 html::-webkit-scrollbar {
@@ -51,11 +54,7 @@ body {
   animation: fadeIn 0.5s ease-in-out;
 }
 
-h1 {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-  font-size: 80px;
-  margin-bottom: 30px;
-}
+
 
 h2 {
   color: white;
