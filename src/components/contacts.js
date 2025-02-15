@@ -1,50 +1,50 @@
-import React, { useEffect } from "react";
+import React, { useEffect} from "react";
 import githubIcon from "../icons/github_icon.svg";
 import vkIcon from "../icons/vk_icon.svg";
 import "../styles/contacts.css";
 
 const CountdownTimer = () => {
-    const animationTime = 20;
-    const days = 7;
-  
-    useEffect(() => {
-      document.getElementById("progress-time-fill").style.animationDuration = `${animationTime}s`;
-      document.getElementById("death-group").style.animationDuration = `${animationTime}s`;
-  
-      const timer = (totalTime, deadline) => {
-        const time = totalTime * 1000;
-        const dayDuration = time / deadline;
-        let remainingDays = deadline;
-  
-        const interval = setInterval(() => {
-          remainingDays--;
-  
-          if (remainingDays <= 0) {
-            clearInterval(interval);
-          }
-        }, dayDuration);
-  
-        return interval;
-      };
-  
-      const countdownInterval = timer(animationTime, days);
-  
-      return () => {
-        clearInterval(countdownInterval);
-      };
-    }, [animationTime, days]);
-  
-    return (
-      <div>
-        <span>
-          Моя карьера не должна умирать — жду вашего предложения о работе или
-          стажировке
-        </span>
-        <div id="progress-time-fill"></div>
-        <div id="death-group"></div>
-      </div>
-    );
-  };
+  const animationTime = 20; 
+
+  useEffect(() => {
+    const progressFill = document.getElementById("progress-time-fill");
+    const deathGroup = document.getElementById("death-group");
+    const armGroup = document.getElementById("designer-arm-group");
+
+
+    progressFill.style.animationDuration = `${animationTime}s`;
+    deathGroup.style.animationDuration = `${animationTime}s`;
+
+    const deadlineAnimation = () => {
+      setTimeout(() => {
+        armGroup.style.animationDuration = '1.5s';
+      }, 0);
+      setTimeout(() => {
+        armGroup.style.animationDuration = '1s';
+      }, 4000);
+      setTimeout(() => {
+        armGroup.style.animationDuration = '0.7s';
+      }, 8000);
+      setTimeout(() => {
+        armGroup.style.animationDuration = '0.3s';
+      }, 12000);
+      setTimeout(() => {
+        armGroup.style.animationDuration = '0.2s';
+      }, 14000);
+    };
+
+    deadlineAnimation();
+  }, [animationTime]);
+
+  return (
+    <div>
+      <div id="progress-time-fill"></div>
+      <div id="death-group"></div>
+      <div id="designer-arm-group"></div>
+    </div>
+  );
+};
+
 
 const Contacts = () => {
   return (
@@ -99,36 +99,6 @@ const Contacts = () => {
           viewBox="0 0 581 158"
           enableBackground="new 0 0 581 158"
         >
-          <g id="fire">
-            <rect id="mask-fire-black" x="511" y="41" width="38" height="34" />
-            <g>
-              <defs>
-                <rect id="mask_fire" x="511" y="41" width="38" height="34" />
-              </defs>
-              <clipPath id="mask-fire_1_">
-                <use href="#mask_fire" overflow="visible" />
-              </clipPath>
-              <g id="group-fire" clipPath="url(#mask-fire_1_)">
-                <path
-                  id="red-flame"
-                  fill="#fb139b"
-                  d="M528.377,100.291c6.207,0,10.947-3.272,10.834-8.576 c-0.112-5.305-2.934-8.803-8.237-10.383c-5.306-1.581-3.838-7.9-0.79-9.707c-7.337,2.032-7.581,5.891-7.11,8.238 c0.789,3.951,7.56,4.402,5.077,9.48c-2.482,5.079-8.012,1.129-6.319-2.257c-2.843,2.233-4.78,6.681-2.259,9.703 C521.256,98.809,524.175,100.291,528.377,100.291z"
-                />
-                <path
-                  id="blue-flame"
-                  opacity="0.71"
-                  fill="#80d9ff"
-                  d="M528.837,100.291c4.197,0,5.108-1.854,5.974-5.417 c0.902-3.724-1.129-6.207-5.305-9.931c-2.396-2.137-1.581-4.176-0.565-6.32c-4.401,1.918-3.384,5.304-2.482,6.658 c1.511,2.267,2.099,2.364,0.42,5.8c-1.679,3.435-5.42,0.764-4.275-1.527c-1.921,1.512-2.373,4.04-1.528,6.563 C522.057,99.051,525.994,100.291,528.837,100.291z"
-                />
-                <path
-                  id="white-flame"
-                  opacity="0.81"
-                  fill="#FFFFFF"
-                  d="M529.461,100.291c-2.364,0-4.174-1.322-4.129-3.469 c0.04-2.145,1.117-3.56,3.141-4.198c2.022-0.638,1.463-3.195,0.302-3.925c2.798,0.821,2.89,2.382,2.711,3.332 c-0.301,1.597-2.883,1.779-1.938,3.834c0.912,1.975,3.286,0.938,2.409-0.913c1.086,0.903,1.826,2.701,0.864,3.924 C532.18,99.691,531.064,100.291,529.461,100.291z"
-                />
-              </g>
-            </g>
-          </g>
           <g id="progress-trail">
             <path
               fill="#FFFFFF"
@@ -234,6 +204,9 @@ const Contacts = () => {
             />
           </g>
         </svg>
+        <span>
+          Моя страсть к работе не должна умирать — жду вашего ответа
+        </span>
       </div>
       <CountdownTimer />
     </>

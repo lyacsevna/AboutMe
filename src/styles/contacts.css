@@ -5,7 +5,6 @@
 
 }
 
-
 .icon {
     background-color: white; 
     border-radius: 50%; 
@@ -112,6 +111,9 @@
     transition: color 0.3s;
 }
 
+#deadline span {
+    text-align: center;
+}
 .contact-item a:hover {
     color: #0056b3;
 }
@@ -123,11 +125,10 @@ fieldset {
 }
 
 #deadline {
-    width:581px;
+    width:700px;
     max-width: 100%;
+    margin-top: 10%;
     height:158px;
-    margin-top: 80px;
-    display: inline-block;
     position: relative;
     top: 50%;
     left: 50%;
@@ -139,7 +140,6 @@ fieldset {
 #deadline svg {
     width: 100%;
 }
-
 
 #progress-time-fill {
     animation-name: progress-fill; 
@@ -157,6 +157,7 @@ fieldset {
 
 #death-arm {
     animation: move-arm 3s ease infinite;
+    /* transform-origin: left center; */
     transform-origin: -60px 74px;
 }
 
@@ -190,45 +191,6 @@ fieldset {
     left: 0;
 }
 
-.mask-red,
-.mask-white {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-}
-
-.mask-red {
-    left: 0;
-    width: 0;
-    color: #BE002A;
-    animation: text-red 20s ease infinite;
-    z-index: 2;
-    background: #000;
-}
-.mask-white {
-    right: 0;
-}
-
-
-#red-flame {
-    opacity: 0;
-    animation: show-flames 20s ease infinite, red-flame 120ms ease infinite;
-    transform-origin: center bottom;
-}
-
-#blue-flame {
-    opacity: 0;
-    animation: show-flames 20s ease infinite, yellow-flame 120ms ease infinite;
-    transform-origin: center bottom;
-}
-
-#white-flame {
-    opacity: 0;
-    animation: show-flames 20s ease infinite, red-flame 100ms ease infinite;
-    transform-origin: center bottom;
-}
 
 @keyframes progress-fill {
     0% {
@@ -298,7 +260,7 @@ fieldset {
     }
 
     9% {
-        transform: rotate(40deg);
+        transform: rotate(60deg);
     }
 
     80% {
@@ -316,7 +278,7 @@ fieldset {
     }
 
     9% {
-        transform: rotate(50deg);
+        transform: rotate(70deg);
     }
 
     80% {
@@ -349,66 +311,5 @@ fieldset {
 
     83% {
         transform: translate(0px, 0px) rotate(4deg) scale(0.8, 1);
-    }
-}
-
-@keyframes text-red {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 98%;
-    }
-}
-
-
-@keyframes show-flames {
-    0% {
-        opacity: 0;
-    }
-    74% {
-        opacity: 0;
-    }
-    80% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes red-flame {
-    0% {
-        transform: translateY(-30px) scale(1, 1);
-    }
-
-    25% {
-        transform: translateY(-30px) scale(1.1, 1.1);
-    }
-
-    75% {
-        transform: translateY(-30px) scale(0.8, 0.7); 
-    }
-
-    100% {
-        transform: translateY(-30px) scale(1, 1); 
-    }
-}
-
-@keyframes blue-flame {
-    0% {
-        transform: translateY(-30px) scale(0.8, 0.7);
-    }
-
-    50% {
-        transform: translateY(-30px) scale(1.1, 1.2);
-    }
-
-    100% {
-        transform: translateY(-30px) scale(1, 1);
     }
 }
