@@ -2,7 +2,9 @@
 
 html {
   scroll-behavior: smooth;
+  user-select: none;
 }
+
 
 html::-webkit-scrollbar {
   width: 0;
