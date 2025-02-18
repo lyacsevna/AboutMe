@@ -45,11 +45,14 @@ const Item = ({ children }) => {
 const App = () => {
     return (
         <>
+            <div class="scroll-container">
             <header>
                 <HeaderFunction />
             </header>
             <Home />
+            
             <main className='container'>
+            
                 <section>
                     <AboutMe />
                 </section>
@@ -68,10 +71,12 @@ const App = () => {
                         <Contacts />
                     </Item>
                 </section>
-            </main>
+                </main>
+                
             <footer>
                 <FooterFunction />
-            </footer>
+                </footer>
+                </div>
         </>
     );
 };
