@@ -11,14 +11,17 @@
 }
 
 .project_item {
+  position: relative;
   padding: 10px;
   margin: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
-  height: auto;
+  height: 200px;
   width: 100%;
+  overflow: hidden;
+  background-color:  #2c303a;
 }
 
 .project_item:hover {
@@ -26,9 +29,18 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-span {
+.project_info {
+  background-color:  #2c303a;
   color: white;
-  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project_item:hover .project_info {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
