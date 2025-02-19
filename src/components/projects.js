@@ -1,8 +1,10 @@
 import React from 'react';
-import '../styles/projects.css';
+import '../styles/projectcard.css';
 import { myprojects } from "../data";
+import ProjectCard from './projectcard';
 
-function ProjectsList({ projectTitle, description, stack }) {
+
+/*function ProjectsList({ projectTitle, description, stack }) {
     function handleClick() {
       localStorage.setItem('auth-time', new Date())
   }
@@ -18,8 +20,7 @@ function ProjectsList({ projectTitle, description, stack }) {
       </div>
     </div>
   );
-}
-
+}*/
 
 const Projects = () => {
     return (
@@ -28,7 +29,7 @@ const Projects = () => {
             <p>Ниже вы можете ознакомиться с моими проектами и их кратким описанием.</p>            
         <div className='project_container'> 
             {myprojects.map((proj) => (
-                <ProjectsList key = { proj.projectTitle } {...proj}/>
+                <ProjectCard key = { proj.projectTitle } {...proj}/>
             ))}
         </div>
       </section>
