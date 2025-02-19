@@ -38,12 +38,14 @@ export const myprojects = [
         projectTitle: 'Учет ежедневных задач',
         description: 'CRUD-приложение для учета задач с возможностью импорта и экспорта данных.',
         stack: 'C#, Windows Presentation Foundation, Microsoft SQL Server, XAML',
+
         githubUrl: 'https://github.com/lyacsevna/MyPlans-by-WFP'
     },
     {
         projectTitle: 'Приложение для работы с STEP-JSON',
         description: '(проект находится в разработке',
         stack: 'C#, Windows Presentation Foundation, Microsoft SQL Server, XAML',
+
         githubUrl: 'отсутствует ;)'
 
     },
@@ -51,6 +53,7 @@ export const myprojects = [
         projectTitle: 'Этот сайт',
         description: 'Веб-страница, созданная для изучения React.js.',
         stack: 'React.js',
+
         githubUrl: 'https://github.com/lyacsevna/About-Me'
     }
 ];
