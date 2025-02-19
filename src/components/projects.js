@@ -11,9 +11,11 @@ function ProjectsList({ projectTitle, description, stack }) {
     <div className='project_item' onClick={handleClick}>
       <p>
         <strong>{projectTitle}</strong>
-        <span>{description}</span>
-        <span>{stack}</span>
       </p>
+      <div className='project_info'>
+        <p>{description}</p>
+        <p>{stack}</p>
+      </div>
     </div>
   );
 }

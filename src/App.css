@@ -26,7 +26,8 @@ body {
   position: relative;
 }
 
-/* исправить отображение при наведении
+/* исправить отображение при наведении. исправить отображение проектов (в форме карточек) */
+
 .scroll-container:hover {
   overflow-y: scroll;
 }
@@ -42,7 +43,7 @@ body {
 
 .scroll-container::-webkit-scrollbar-thumb:hover {
   background-color: #555;
-}*/
+}
 
 .container {
   margin: 0 auto;
