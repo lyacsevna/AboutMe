@@ -9,7 +9,7 @@ const Projects = () => {
     return (
       <section id="projects">
             <h2>Мои проекты</h2>
-            <p>Ниже вы можете ознакомиться с моими проектами и их кратким описанием.</p>            
+            <p>Наведите курсор на проект, чтобы узнать больше информации о нем.</p>            
         <div className='project_container'> 
             {myprojects.map((proj) => (
                 <ProjectCard key = { proj.projectTitle } {...proj}/>

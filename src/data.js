@@ -43,9 +43,8 @@ export const myprojects = [
     },
     {
         projectTitle: 'Приложение для работы с STEP-JSON',
-        description: '(проект находится в разработке',
+        description: '(проект находится в разработке)',
         stack: 'C#, Windows Presentation Foundation, Microsoft SQL Server, XAML',
-
         githubUrl: 'отсутствует ;)'
 
     },
