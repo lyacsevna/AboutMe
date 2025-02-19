@@ -38,7 +38,7 @@ export const myprojects = [
         projectTitle: 'Учет ежедневных задач',
         description: 'CRUD-приложение для учета задач с возможностью импорта и экспорта данных.',
         stack: 'C#, Windows Presentation Foundation, Microsoft SQL Server, XAML',
-
+        mainImage: 'https://github.com/lyacsevna/About-Me/blob/main/src/images/myplansproject/mainwindow.png?raw=true',
         githubUrl: 'https://github.com/lyacsevna/MyPlans-by-WFP'
     },
     {

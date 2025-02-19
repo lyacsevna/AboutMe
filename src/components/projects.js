@@ -4,23 +4,6 @@ import { myprojects } from "../data";
 import ProjectCard from './projectcard';
 
 
-/*function ProjectsList({ projectTitle, description, stack }) {
-    function handleClick() {
-      localStorage.setItem('auth-time', new Date())
-  }
-  
-  return (
-    <div className='project_item' onClick={handleClick}>
-      <p>
-        <strong>{projectTitle}</strong>
-      </p>
-      <div className='project_info'>
-        <p>{description}</p>
-        <p>{stack}</p>
-      </div>
-    </div>
-  );
-}*/
 
 const Projects = () => {
     return (

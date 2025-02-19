@@ -2,12 +2,12 @@ import React from "react";
 import '../styles/projectcard.css';
  
 
-const ProjectCard = ({ projectTitle, description, stack, handleClick }) => {
+const ProjectCard = ({ projectTitle, description, stack, mainImage, handleClick }) => {
   return (
     <article className='project_card' onClick={handleClick}>
       <div className='project_card_inner'>
         <header className='project_card_front'>
-          <img src='https://via.placeholder.com/150' alt='Thumbnail проекта' className='project_image' />
+          <img src={mainImage} alt='Thumbnail проекта' className='project_image' />
           <h3>{projectTitle}</h3>
         </header>
         <section className='project_card_back'>
