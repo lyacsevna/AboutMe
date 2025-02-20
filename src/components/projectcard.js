@@ -1,6 +1,6 @@
 import React, { useState } from "react"; 
 import '../styles/projectcard.css';
-
+//got
 const ProjectCard = ({ projectTitle, description, stack, githubUrl, imageArray }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
