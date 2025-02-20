@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Home from './components/home';
 import AboutMe from './components/aboutme';
 import Projects from './components/projects';
@@ -42,42 +43,36 @@ const Item = ({ children }) => {
       </div>
   );
 };
+
 const App = () => {
     return (
-        <>
-            <div class="scroll-container">
-            <header>
-                <HeaderFunction />
-            </header>
-            <Home />
-            
-            <main className='container'>
-            
-                <section>
-                    <AboutMe />
-                </section>
-                <section>
+        <Router>
+            <div className="scroll-container">
+                <header>
+                    <HeaderFunction />
+                </header>
+                <Home />
+                <main className='container'>
+                    
+                    <Item>
+                        <AboutMe />
+                    </Item>
                     <Item>
                         <EducationSection />
                     </Item>
-                </section>
-                <section>
                     <Item>
                         <Projects />
                     </Item>
-                </section>
-                <section>
                     <Item>
                         <Contacts />
                     </Item>
-                </section>
                 </main>
                 
-            <footer>
-                <FooterFunction />
+                <footer>
+                    <FooterFunction />
                 </footer>
-                </div>
-        </>
+            </div>
+        </Router>
     );
 };
 

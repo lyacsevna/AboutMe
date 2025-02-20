@@ -1,9 +1,11 @@
 import React, { useState } from "react"; 
+import { useNavigate } from "react-router-dom"; 
 import '../styles/projectcard.css';
-//got
+
 const ProjectCard = ({ projectTitle, description, stack, githubUrl, imageArray }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const navigate = useNavigate();
 
   const handleNextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageArray.length);
@@ -13,8 +15,17 @@ const ProjectCard = ({ projectTitle, description, stack, githubUrl, imageArray }
     setCurrentImageIndex((prevIndex) => (prevIndex - 1 + imageArray.length) % imageArray.length);
   };
 
+  const handleCardClick = () => {
+    navigate(`/project/`);
+  };
+
+  const handleDetailsClick = (event) => {
+    event.stopPropagation();
+    navigate(`/project/${projectTitle}`);
+  };
+
   return (
-    <article className='project_card' onClick={() => setIsFlipped(!isFlipped)}>
+    <article className='project_card' onClick={handleCardClick}>
       <div className={`project_card_inner ${isFlipped ? 'rotated' : ''}`}>
         <header className='project_card_front'>
           <h3>{projectTitle}</h3>
@@ -35,7 +46,7 @@ const ProjectCard = ({ projectTitle, description, stack, githubUrl, imageArray }
             <div className='project_info'>
               <p>{description}</p>
               <p>{stack}</p>
-              <a href={githubUrl} className='github_link'>View on GitHub</a>
+              <button onClick={handleDetailsClick} className='github_link'>Подробнее</button> 
             </div>
           </aside>
         </section>
