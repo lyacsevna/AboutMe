@@ -20,7 +20,7 @@ function UniversityEdu({ university, faculty, specialty, years }) {
   );
 }
 
-function CoursesEdu({ title, organization, years, certificateUrl }) {
+function CoursesEdu({ title, organization, years, certificate }) {
   const [showCertificate, setShowCertificate] = useState(false);
 
   function handleMouseEnter() {
@@ -50,7 +50,7 @@ function CoursesEdu({ title, organization, years, certificateUrl }) {
       {showCertificate && (
         <div className="certificate-popup">
           <div className="certificate_jpg">
-            <img src={certificateUrl} alt={`Сертификат для курса "${title}"`} />
+            <img src={certificate} alt={`Сертификат для курса "${title}"`} />
           </div>
         </div>
 
