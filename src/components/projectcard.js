@@ -20,8 +20,8 @@ const ProjectCard = ({ projectTitle, description, stack, githubUrl, imageArray }
   };
 
   const handleDetailsClick = (event) => {
-    event.stopPropagation();
-    navigate(`/project/${projectTitle}`);
+    event.stopPropagation(); // Остановить всплытие события, чтобы не вызывать handleCardClick
+    navigate(`/project/${projectTitle}`); // Переход на страницу деталей проекта
   };
 
   return (
@@ -46,7 +46,7 @@ const ProjectCard = ({ projectTitle, description, stack, githubUrl, imageArray }
             <div className='project_info'>
               <p>{description}</p>
               <p>{stack}</p>
-              <button onClick={handleDetailsClick} className='github_link'>Подробнее</button> 
+              <button onClick={handleDetailsClick} className='github_link'>Подробнее</button> {/* Исправлено здесь */}
             </div>
           </aside>
         </section>

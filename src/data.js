@@ -31,17 +31,8 @@ export const courses = [
     }
 ];
 export const myprojects = [
-    
-    {
-        projectTitle: 'Учет ежедневных задач',
-        description: 'CRUD-приложение для учета задач с возможностью импорта и экспорта данных.',
-        stack: 'C#, Windows Presentation Foundation, Microsoft SQL Server, XAML',
-        imageArray : [addtask, mainwindow],
-        githubUrl: 'https://github.com/lyacsevna/MyPlans-by-WFP'
-    }
-];
 
-/*,
+    
     {
         projectTitle: 'Приложение для работы с STEP-JSON',
         description: '(проект находится в разработке)',
@@ -63,4 +54,14 @@ export const myprojects = [
         stack: 'Django, Python, HTML, CSS',
         imageArray: [],
         githubUrl: 'https://github.com/lyacsevna/PythonPlanner'
-    }*/
+    },
+    
+    {
+        projectTitle: 'Учет ежедневных задач',
+        description: 'CRUD-приложение для учета задач с возможностью импорта и экспорта данных.',
+        stack: 'C#, Windows Presentation Foundation, Microsoft SQL Server, XAML',
+        imageArray : [addtask ,mainwindow],
+        githubUrl: 'https://github.com/lyacsevna/MyPlans-by-WFP'
+    }
+];
+
