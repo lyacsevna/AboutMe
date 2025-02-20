@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/projectcard.css';
-import { myprojects } from "../data";
-import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProjectCard from './projectcard';
+import { myprojects } from "../data";
+import { Carousel } from 'react-bootstrap';
 
 const Projects = () => {
     return (
