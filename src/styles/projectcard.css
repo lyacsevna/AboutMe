@@ -6,7 +6,7 @@
 
 .project_card {
   perspective: 1000px;
-  width: 300px; 
+  width: 80%; 
   height: 400px;
   margin: 1.5%;
   color: white;
@@ -42,7 +42,7 @@
 
 .project_card_front {
   z-index: 0;
-  background-color: #007bff;
+  background-color:  #2c303a;
 }
 
 .project_card_back {
@@ -72,12 +72,13 @@
 }
 
 .project_images {
-  width: 100%;
+  width: auto;
+  height: auto;
 }
 
 .project_image {
   width: 100%;
-  height: 150px;
+  height: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
