@@ -11,8 +11,8 @@ const Projects = () => {
             <h2>Мои проекты</h2>
             <p>Наведите курсор на проект, чтобы узнать больше информации о нем.</p>            
         <div className='project_container'> 
-            {myprojects.map((proj) => (
-                <ProjectCard key = { proj.projectTitle } {...proj}/>
+            {myprojects.map((projectData) => (
+                <ProjectCard key = { projectData.projectTitle } {...projectData}/>
             ))}
         </div>
       </section>
