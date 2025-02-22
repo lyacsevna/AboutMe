@@ -1,7 +1,9 @@
-$primary-gradient: linear-gradient(90deg, #fb139b, #80d9ff);
-$button-bg-color: #fff;
+@import 'variables';
+
+$button-bg-color: white;
 $button-text-color: #6a11cb;
-$button-hover-bg-color: #f0f0f0;
+$button-hover-bg-color: darken($button-bg-color, 15%);
+
 
 .home-section {
   display: flex;
@@ -12,7 +14,7 @@ $button-hover-bg-color: #f0f0f0;
   margin-bottom: 15px;
   font-size: large;
   background: $primary-gradient;
-  color: white;
+  color: $text-color;
   text-align: center;
   padding: 20px;
 
@@ -43,7 +45,7 @@ $button-hover-bg-color: #f0f0f0;
     font-style: italic;
   }
 
-  .cta-button {
+  .btn-learn-more {
     padding: 12px 24px;
     background-color: $button-bg-color;
     color: $button-text-color;
@@ -52,7 +54,7 @@ $button-hover-bg-color: #f0f0f0;
     font-weight: bold;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px $box-shadow-color;
 
     &:hover {
       background-color: $button-hover-bg-color;

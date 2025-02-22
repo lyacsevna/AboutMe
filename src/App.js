@@ -8,7 +8,7 @@ import Contacts from './components/contacts';
 import EducationSection from './components/education';
 import FooterFunction from './components/footer';
 import HeaderFunction from './components/navigation';
-import './App.css';
+import './App.scss';
 
 const Item = ({ children }) => {
   const itemRef = useRef(null);

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../styles/edu.css';
+import '../styles/edu.scss';
 import { courses, education } from "../data";
 
 function UniversityEdu({ university, faculty, specialty, years }) {

@@ -1,7 +1,8 @@
 import React from "react";
 import githubIcon from "../icons/github_icon.svg";
 import vkIcon from "../icons/vk_icon.svg";
-import "../styles/contacts.css";
+import emailIcon from "../icons/email-icon.svg";
+import "../styles/contacts.scss";
 
 
 const Contacts = () => {
@@ -27,6 +28,10 @@ const Contacts = () => {
             aria-label="VK"
           >
             <img src={vkIcon} alt="VK" className="icon" />
+          </a>
+
+          <a href="ДОБАВИТЬ" target="_blank" rel="noopener noreferrer" aria-label="email">
+            <img src={emailIcon} alt="Email" className="icon"/>
           </a>
         </div>
         <p>

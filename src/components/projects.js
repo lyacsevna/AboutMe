@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/projectcard.css';
+import '../styles/projectcard.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProjectCard from './projectcard';
 import { myprojects } from "../data";

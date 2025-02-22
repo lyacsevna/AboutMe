@@ -23,7 +23,7 @@ const Home = () => {
             <header className="home-header">
                 <h1 className="fade-in">{text}</h1>
                 <p className="fade-in">Сайт-портфолио мини-фронтендера</p>
-                <a href="#aboutme" className="cta-button fade-in">Узнать больше</a>
+                <a href="#aboutme" className="btn-learn-more fade-in">Узнать больше</a>
             </header>
         </section>
     );

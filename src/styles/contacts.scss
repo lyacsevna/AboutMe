@@ -1,0 +1,113 @@
+@import 'variables';
+
+#contacts {
+    margin: 20px;
+    color: $text-color;
+    font-family: Arial, sans-serif;
+
+
+    .icon {
+        background-color: $background-icon-color; 
+        border-radius: 50%; 
+        width: 40px; 
+        height: 40px; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        transition: transform 0.3s ease, background-color 0.3s ease; 
+        margin-right: 8px; 
+
+        &:hover {
+            animation: rotate-right 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
+            background-color: lighten($primary-color, 20%);
+            box-shadow: 0px 0px 25px $primary-color;
+        }
+
+        &:not(:hover) {
+            animation: rotate-left 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+    }
+
+    .contactLink {
+        display: flex;
+        justify-content: center;
+        margin: 15px 30px;
+    }
+
+    .contact-item {
+        color: $text-color;
+        padding: 10px;
+        margin: 40px ;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px $box-shadow-color;
+        }
+    }
+
+    .contact-form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 5px;
+            color: $text-color;
+        }
+
+        input, 
+        textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid $border-color;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: $primary-color;
+            color: $text-color;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: darken($primary-color, 20%) 
+            }
+        }
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+@keyframes rotate-right {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(720deg);
+    }
+    100% {
+        transform: scale(1) rotate(720deg);
+    }
+}
+
+@keyframes rotate-left {
+    0% {
+        transform: scale(1.2) rotate(720deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}

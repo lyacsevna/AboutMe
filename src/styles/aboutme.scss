@@ -1,0 +1,29 @@
+@import 'variables';
+
+.aboutme-section {
+
+    h2 {
+        text-align: center;
+        background-clip: text;
+        margin-bottom: 15px;
+    }
+
+    p {
+        text-align: justify;
+        font-size: large;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        color: $text-color;
+    }
+
+    aside {
+        p {
+            margin-top: 20px;
+            background: $primary-gradient;
+            padding: 10px;
+            color: $text-color;
+            border-radius: 5px;
+            font-style: italic;
+        }
+    }
+}
