@@ -41,8 +41,7 @@
 }
 
 .project_card_front {
-  z-index: 0;
-  background-color:  #2c303a;
+  z-index: 0;  
 }
 
 .project_card_back {
@@ -70,6 +69,8 @@
   justify-content: center; 
   padding: 16px; 
 }
+
+
 
 .project_images {
   width: auto;
