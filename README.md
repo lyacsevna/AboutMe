@@ -36,3 +36,7 @@ npm start
 ```
 
 Now you can open the application in the browser at http://localhost:3000.
+
+
+If it is not possible to install:
+<image src="https://github.com/lyacsevna/AboutMe/blob/main/src/images/mainpicture.png?raw=true" alt=" Main window ">
