@@ -11,7 +11,7 @@ The project contains the following sections:
 
 ## Installation and launch
 
-My website is still under development and has not been published. So to check it out, follow these steps:
+My website is still UNDER DEVELOPMENT and has not been published. So to check it out, follow these steps:
 
 1. Clone the repository:
 
