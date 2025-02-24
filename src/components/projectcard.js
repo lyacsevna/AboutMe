@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 const ProjectCard = ({ projectTitle, description, stack, githubUrl, imageArray }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isFlipped, setIsFlipped] = useState(false); 
   const navigate = useNavigate();
 
   const handleNextImage = () => {
@@ -14,7 +15,7 @@ const ProjectCard = ({ projectTitle, description, stack, githubUrl, imageArray }
   };
 
   const handleCardClick = () => {
-    navigate(`/project/`);
+    setIsFlipped(!isFlipped); 
   };
 
   const handleDetailsClick = (event) => {
@@ -24,7 +25,7 @@ const ProjectCard = ({ projectTitle, description, stack, githubUrl, imageArray }
 
   return (
     <article className='project_card' onClick={handleCardClick}>
-      <div className='project_card_inner'>
+      <div className={`project_card_inner ${isFlipped ? 'flipped' : ''}`}>
         <header className='project_card_front'>
           <h3>{projectTitle}</h3>
         </header>
@@ -38,8 +39,14 @@ const ProjectCard = ({ projectTitle, description, stack, githubUrl, imageArray }
               <figcaption className='navigation_buttons'>
                 {imageArray.length > 1 && (
                   <>
-                    <button className='nav_button' onClick={handlePrevImage}>&lt;</button>
-                    <button className='nav_button'onClick={handleNextImage}>&gt;</button>
+                    <button className='nav_button' onClick={(event) => {
+                      event.stopPropagation();
+                      handleNextImage();
+                    }}>&lt;</button>
+                    <button className='nav_button' onClick={(event) => {
+                      event.stopPropagation();
+                      handleNextImage();
+                    }}>&gt;</button>
                   </>
                 )}
               </figcaption>
