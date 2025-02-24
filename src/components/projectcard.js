@@ -38,8 +38,8 @@ const ProjectCard = ({ projectTitle, description, stack, githubUrl, imageArray }
               <figcaption className='navigation_buttons'>
                 {imageArray.length > 1 && (
                   <>
-                    <button onClick={handlePrevImage}>&lt;</button>
-                    <button onClick={handleNextImage}>&gt;</button>
+                    <button className='nav_button' onClick={handlePrevImage}>&lt;</button>
+                    <button className='nav_button'onClick={handleNextImage}>&gt;</button>
                   </>
                 )}
               </figcaption>

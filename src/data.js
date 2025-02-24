@@ -35,7 +35,7 @@ export const courses = [
 export const myprojects = [
 
     
-    {
+    /*{
         projectTitle: 'Приложение для работы с STEP-JSON',
         description: '(проект находится в разработке)',
         stack: 'C#, Windows Presentation Foundation, Microsoft SQL Server, XAML',
@@ -56,7 +56,7 @@ export const myprojects = [
         stack: 'Django, Python, HTML, CSS',
         imageArray: [],
         githubUrl: 'https://github.com/lyacsevna/PythonPlanner'
-    },
+    },*/
     
     {
         projectTitle: 'Учет ежедневных задач',

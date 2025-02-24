@@ -92,28 +92,44 @@
             }
         }
 
-        .navigation_buttons {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            margin-top: 10px;
+    .navigation_buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;   
+        
+    }
 
-            .github_link {
-                margin-top: 10px;
-                padding: 8px 16px;
-                background-color: $link-color;
-                color: $text-color;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-                text-decoration: none; 
-                transition: background-color 0.3s;
+    .nav_button {
+        border-color: transparent;
+        background-color: transparent;
+        color: $text-color;
+        border-radius: 50%;
+        transition: transform 0.5s ease, background-color 0.5s, box-shadow 0.5s ease;
 
-                &:hover {
-                    background-color: darken($link-color, 25%);
-            }
+        &:hover {
+            background-color: lighten($primary-color, $color-change-percentage);
+            box-shadow: 0px 0px 25px $primary-color;
+            
         }
     }
+
+    .github_link {
+        margin-top: 10px;
+        padding: 8px 16px;
+        background-color: $link-color;
+        color: $text-color;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none; 
+        
+
+        &:hover {
+            background-color: darken($link-color, $color-change-percentage);
+            
+        }
+}
 }
 
 
