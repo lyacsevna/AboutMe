@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
-const ProjectCard = ({ projectTitle, description, stack, githubUrl, imageArray }) => {
+const ProjectCard = ({ projectTitle, description, stack, imageArray }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false); 
-  const navigate = useNavigate();
 
   const handleNextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageArray.length);
@@ -20,8 +18,10 @@ const ProjectCard = ({ projectTitle, description, stack, githubUrl, imageArray }
 
   const handleDetailsClick = (event) => {
     event.stopPropagation();
-    navigate(`/project/${projectTitle}`);
+    const url = `/project/${encodeURIComponent(projectTitle)}`;
+    window.open(url, '_blank'); 
   };
+
 
   return (
     <article className='project_card' onClick={handleCardClick}>
@@ -41,7 +41,7 @@ const ProjectCard = ({ projectTitle, description, stack, githubUrl, imageArray }
                   <>
                     <button className='nav_button' onClick={(event) => {
                       event.stopPropagation();
-                      handleNextImage();
+                      handlePrevImage();
                     }}>&lt;</button>
                     <button className='nav_button' onClick={(event) => {
                       event.stopPropagation();

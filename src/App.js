@@ -1,11 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/home';
 import AboutMe from './components/aboutme';
 import Projects from './components/projects';
 import Contacts from './components/contacts';
 import EducationSection from './components/education';
+import ProjectDetailPage from './pages/ProjectDetailPage'; // Импортируйте ваш компонент для деталей проекта
 import FooterFunction from './components/footer';
 import HeaderFunction from './components/navigation';
 import './App.scss';
@@ -54,21 +55,25 @@ const App = () => {
                 </header>
                 <Home />
                 <main className='container'>
-                    
-                    <Item>
-                        <AboutMe />
-                    </Item>
-                    <Item>
-                        <EducationSection />
-                    </Item>
-                    <Item>
-                        <Projects />
-                    </Item>
-                    <Item>
-                        <Contacts />
-                    </Item>
+
+
+
+                <Item>
+                    <AboutMe />
+                </Item>
+                <Item>
+                    <EducationSection />
+                </Item>
+                <Item>
+                    <Projects />
+                </Item>
+                <Item>
+                    <Contacts />
+                </Item>
+                <Routes>
+                    <Route path="/project/:projectTitle" element={<ProjectDetailPage />} />
+                </Routes>
                 </main>
-                
                 <footer>
                     <FooterFunction />
                 </footer>
